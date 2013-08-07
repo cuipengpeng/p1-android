@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_conversation_fragment_list_header"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@drawable/default_selector_list_item"
+        android:clipToPadding="false"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_conversation_fragment_list_profile"
+            android:layout_width="53dip"
+            android:layout_height="53dp"
+            android:layout_margin="6dip"
+            android:layout_marginLeft="7dp"
+            android:background="@drawable/profile_shadow"
+            android:contentDescription="@string/contentDescription" />
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/tv_conversation_fragment_list_username"
+                style="@style/P1MediumTextDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_conversation_fragment_list_time"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:maxLines="1"
+                android:textSize="@dimen/conversation_list_username_text_size"
+                p1:typeface="helvetica_neue" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/tv_conversation_list_message"
+                style="@style/P1SmallTextLightGrey2White"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/tv_conversation_fragment_list_username"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/conversation_unread_image"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:maxLines="2"
+                android:textSize="@dimen/conversation_list_msg_text_size"
+                p1:typeface="helvetica_neue" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/tv_conversation_fragment_list_time"
+                style="@style/P1SmallTextLightGrey2White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_conversation_fragment_list_username"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:textSize="@dimen/conversation_list_time_text_size"
+                p1:typeface="helvetica_neue_light" />
+
+            <ImageView
+                android:id="@+id/conversation_unread_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_conversation_fragment_list_time"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/chat_unread_message_icon"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/conversation_list_item_divider" />
+
+</LinearLayout>

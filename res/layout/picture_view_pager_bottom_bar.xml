@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/galleryPagerBottomBar"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/actionbar_height"
+    android:layout_gravity="bottom"
+    android:background="@color/transparant" >
+
+    <RelativeLayout
+        android:id="@+id/picturePagerUserLayout"
+        android:layout_marginLeft="15dp"
+        android:layout_width="@dimen/actionbar_item_width"
+        android:layout_height="@dimen/actionbar_item_height"
+        android:gravity="center"
+        android:layout_alignParentLeft="true" >
+
+    </RelativeLayout>
+
+    <ToggleButton
+        android:id="@+id/galleryLikeButton"
+        style="@style/LikeButton"
+        android:layout_width="@dimen/actionbar_item_width"
+        android:layout_height="@dimen/actionbar_item_height"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:contentDescription="@string/like_button_desc"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="@dimen/picture_view_pager_buttons_margin" />
+
+    <ImageButton
+        android:id="@+id/galleryCommentsButton"
+        style="@style/CommentButton"
+        android:layout_width="@dimen/actionbar_item_width"
+        android:layout_height="@dimen/actionbar_item_height"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/galleryLikeButton"
+        android:clickable="true"
+        android:contentDescription="@string/comments_button_desc"
+        android:layout_marginRight="@dimen/picture_view_pager_buttons_margin" />
+
+</RelativeLayout>

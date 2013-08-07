@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_selector_list_item" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/actionbar_height" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/default_selector_list_item"
+            android:orientation="vertical" >
+
+            <!-- 1 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_relationship_status1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/relationship_status_padding" >
+
+                <FrameLayout
+                    android:id="@+id/fl_relationship_status1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_unselected1"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_unselected" />
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_selected1"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_selected"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <com.p1.mobile.p1android.ui.widget.P1TextView
+                    android:id="@+id/tv_relationship_status1"
+                    style="@style/P1MediumTextGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/relationship_status_textview_margin"
+                    android:layout_toRightOf="@id/fl_relationship_status1"
+                    android:text="@string/profile_detail_unknown"
+                    p1:typeface="helvetica_neue" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/follow_list_item_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <!-- 2 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_relationship_status2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/relationship_status_padding" >
+
+                <FrameLayout
+                    android:id="@+id/fl_relationship_status2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_unselected2"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_unselected" />
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_selected2"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_selected"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <com.p1.mobile.p1android.ui.widget.P1TextView
+                    android:id="@+id/tv_relationship_status2"
+                    style="@style/P1MediumTextGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/relationship_status_textview_margin"
+                    android:layout_toRightOf="@id/fl_relationship_status2"
+                    android:text="@string/profile_detail_unknown"
+                    p1:typeface="helvetica_neue" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/follow_list_item_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <!-- 3 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_relationship_status3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/relationship_status_padding" >
+
+                <FrameLayout
+                    android:id="@+id/fl_relationship_status3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_unselected3"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_unselected" />
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_selected3"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_selected"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <com.p1.mobile.p1android.ui.widget.P1TextView
+                    android:id="@+id/tv_relationship_status3"
+                    style="@style/P1MediumTextGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/relationship_status_textview_margin"
+                    android:layout_toRightOf="@id/fl_relationship_status3"
+                    android:text="@string/profile_detail_unknown"
+                    p1:typeface="helvetica_neue" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/follow_list_item_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <!-- 4 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_relationship_status4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/relationship_status_padding" >
+
+                <FrameLayout
+                    android:id="@+id/fl_relationship_status4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_unselected4"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_unselected" />
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_selected4"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_selected"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <com.p1.mobile.p1android.ui.widget.P1TextView
+                    android:id="@+id/tv_relationship_status4"
+                    style="@style/P1MediumTextGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/relationship_status_textview_margin"
+                    android:layout_toRightOf="@id/fl_relationship_status4"
+                    android:text="@string/profile_detail_unknown"
+                    p1:typeface="helvetica_neue" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/follow_list_item_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <!-- 5 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_relationship_status5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/relationship_status_padding" >
+
+                <FrameLayout
+                    android:id="@+id/fl_relationship_status5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_unselected5"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_unselected" />
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_selected5"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_selected"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <com.p1.mobile.p1android.ui.widget.P1TextView
+                    android:id="@+id/tv_relationship_status5"
+                    style="@style/P1MediumTextGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/relationship_status_textview_margin"
+                    android:layout_toRightOf="@id/fl_relationship_status5"
+                    android:text="@string/profile_detail_unknown"
+                    p1:typeface="helvetica_neue" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/follow_list_item_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <!-- 6 -->
+
+            <RelativeLayout
+                android:id="@+id/rl_relationship_status6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/relationship_status_padding"
+                android:visibility="gone" >
+
+                <FrameLayout
+                    android:id="@+id/fl_relationship_status6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_unselected6"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_unselected" />
+
+                    <ImageView
+                        android:id="@+id/iv_relationship_status_selected6"
+                        android:layout_width="@dimen/relationship_status_imageview_height"
+                        android:layout_height="@dimen/relationship_status_imageview_height"
+                        android:contentDescription="@string/friends_list_pic_desc"
+                        android:src="@drawable/relationship_status_selected"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <com.p1.mobile.p1android.ui.widget.P1TextView
+                    android:id="@+id/tv_relationship_status6"
+                    style="@style/P1MediumTextGray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/relationship_status_textview_margin"
+                    android:layout_toRightOf="@id/fl_relationship_status6"
+                    android:text="@string/profile_detail_unknown"
+                    p1:typeface="helvetica_neue" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_relationship_status_v1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/follow_list_item_divider"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/v_relationship_status_v2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/user_profile_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

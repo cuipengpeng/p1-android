@@ -1,0 +1,337 @@
+<resources>
+
+    <string name="album_all">"   相机胶卷"</string>
+
+    <string name="at">"在 "</string>
+    <!-- Cache Names -->
+    <string name="app_name">P1</string>
+    <string name="p1_account_type">P1.com</string>
+    <string name="profile_picture_decription">用户头像照片</string>
+    <string name="cover_picture_decription">用户封面照片</string>
+
+    <string name="uploading">上传中...</string>
+    <string name="failed">上传错误，点击重试</string>
+    <string name="failed_to_load">刷新失败，请确定你有一个网络连接后，再重试</string>
+    <!-- LoginActivity -->
+    <string name="login">登陆</string>
+    <string name="apply">申请会籍</string>
+    <string name="reset_password">找回密码</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="usernamehint">登陆邮箱</string>
+    <string name="passwordhint">密码</string>
+    <string name="login_wrong_title">登陆信息错误</string>
+    <string name="login_wrong_credentials">请重试，或点击  \"忘记密码\" 来找回你的密码</string>
+    <string name="login_wrong_password">请输入正确的密码</string>
+    <string name="login_failed_connection">登录失败，请确定你有一个网络连接后，再重试</string>
+    <string name="login_empty_credentials">请输入用户名和密码</string>
+    <string name="login_forget_success">密码重置成功。请检查你的邮箱来获取新密码</string>
+    <string name="login_forget_failed">密码重置失败。 请输入正确的邮箱地址后，再重试。</string>
+    <string name="dev_username">patrick.trillsam@gmail.com</string>
+    <string name="dev_password">topsecret</string>
+    <string name="login_error">连接服务器失败</string>
+
+    <!-- ApplyActivity -->
+    <string name="apply_failed">请检查你的网络连接，然后在上传一次</string>
+    <string name="apply_missing_info">请填写所有信息后重试</string>
+    <string name="apply_success">会员申请已发送，我们会尽快联系\n您，谢谢！</string>
+    <string name="apply_title">申请会员</string>
+    <string name="apply_fistname">名</string>
+    <string name="apply_lastname">姓</string>
+    <string name="apply_email">邮箱</string>
+    <string name="apply_text">请填写下面信息申请加入新的P1。P1.CN会员\n请用你的用户名和密码直接登录</string>
+
+    <!-- SettingFragment -->
+    <string name="setting_title">设置</string>
+    <string name="setting_invisible_mode">不在“浏览”里显示我</string>
+    <string name="setting_invisible_mode_tip1">开启此功能后，你不会出现在“浏览会员”页\n面，你的照片也将不显示在“浏览照片”页面</string>
+    <string name="setting_change_profile_picture">设置头像照片</string>
+    <string name="setting_change_cover_picture">设置封面照片</string>
+    <string name="setting_edit_personal_information">编辑个人信息</string>
+    <string name="setting_email">邮箱</string>
+    <string name="setting_change_passwd">更改登陆密码</string>
+    <string name="setting_sign_out">退出登陆</string>
+    <string name="setting_switch_off">" 关 "</string>
+    <string name="setting_switch_on">" 开 "</string>
+
+    <!-- ChangePasswordFragment -->
+    <string name="change_passwd_title">设置密码</string>
+    <string name="change_passwd_current_passwd">当前密码</string>
+    <string name="change_passwd_new_passwd">新密码</string>
+    <string name="change_passwd_confirm_passwd">重复新密码</string>
+    <string name="change_passwd_dialog_passwd_at_least">密码至少6位数字或字母</string>
+    <string name="change_passwd_dialog_not_match">密码不匹配</string>
+    <string name="change_passwd_dialog_update_success">密码更新成功</string>
+    <string name="change_passwd_dialog_password_incorrect">旧密码错误，请重试</string>
+    <string name="dialog_ok">好</string>
+
+    <!-- UserProfileFragment -->
+    <string name="user_profile_edit">编辑</string>
+
+    <!-- EditProfileFragment -->
+    <string name="edit_profile_title">设置个人信息</string>
+    <string name="edit_profile_description">描述</string>
+    <string name="edit_profile_desc_yourself">个人描述</string>
+    <string name="edit_profile_given_name">名</string>
+    <string name="edit_profile_family_name">姓</string>
+    <string name="edit_profile_school">学校</string>
+
+    <!-- EditUserInfoFragment -->
+    <string name="edit_user_info_email">邮箱不能为空！</string>
+    <string name="edit_user_info_given_name">名字不能为空！</string>
+    <string name="edit_user_info_family_name">姓氏不能为空！</string>
+    <string name="edit_user_info_save">保存</string>
+    <string name="edit_user_info_update">更新</string>
+    <string name="edit_user_info_bottom_desc">你的简介、个人网站</string>
+    <string name="edit_user_info_bottom_given_name">请填写你的名</string>
+    <string name="edit_user_info_bottom_family_name">请填写你的姓</string>
+    <string name="edit_user_info_bottom_school">请填写你的学校</string>
+    <string name="edit_user_info_bottom_position">请填写你的职位</string>
+    <string name="edit_user_info_bottom_company">请填写你的公司信息</string>
+    <string name="edit_user_info_bottom_location">请填写你所在的城市</string>
+    <string name="dialog_title">设置未保存</string>
+    <string name="dialog_message">点击右上角的按钮保存设置，或放弃更改返回</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_discard">放弃更改</string>
+
+    <!-- Zodiac -->
+    <string name="zodiac_aries">牡羊座</string>
+    <string name="zodiac_taurus">金牛座</string>
+    <string name="zodiac_gemini">双子座</string>
+    <string name="zodiac_cancer">巨蟹座</string>
+    <string name="zodiac_leo">狮子座</string>
+    <string name="zodiac_virgo">处女座</string>
+    <string name="zodiac_libra">天秤座</string>
+    <string name="zodiac_scorpio">天蝎座</string>
+    <string name="zodiac_sagittarus">射手座</string>
+    <string name="zodiac_capricornus">摩羯座</string>
+    <string name="zodiac_aquarius">水瓶座</string>
+    <string name="zodiac_pisces">双鱼座</string>
+
+    <!-- BloodTypeFragment -->
+    <string name="blood_type_a">A</string>
+    <string name="blood_type_b">B</string>
+    <string name="blood_type_ab">AB</string>
+    <string name="blood_type_o">O</string>
+    <string name="blood_type_unknown">不清楚</string>
+
+    <!-- RelationshipStatusFragment -->
+    <string name="relationship_ship_single">单身</string>
+    <string name="relationship_ship_in_relationship">恋爱中</string>
+    <string name="relationship_ship_engaged">订婚</string>
+    <string name="relationship_ship_married">已婚</string>
+    <string name="relationship_ship_complicated">比较复杂</string>
+    <string name="relationship_ship_private">保密</string>
+
+    <!-- ProfileDetailFragment -->
+    <string name="profile_detail_personal">基本信息</string>
+    <string name="profile_detail_professional">更多信息</string>
+    <string name="profile_detail_relationship">恋爱状态</string>
+    <string name="profile_detail_zodiac">星座</string>
+    <string name="profile_detail_blood_type">血型</string>
+    <string name="profile_detail_school">学校</string>
+    <string name="profile_detail_position">职位</string>
+    <string name="profile_detail_company">公司</string>
+    <string name="profile_detail_location">城市</string>
+    <string name="profile_detail_unknown">未知</string>
+
+    <!-- BrowseFilterActivity -->
+    <string name="browse_filter_title">浏览设置</string>
+    <string name="browse_filter_filter_by">排序方式</string>
+    <string name="browse_filter_recent">最新</string>
+    <string name="browse_filter_popular">最受欢迎</string>
+    <string name="browse_filter_random">随机</string>
+    <string name="browse_filter_gender">性别</string>
+    <string name="browse_filter_all">所有</string>
+    <string name="browse_filter_done">完成</string>
+    <string name="browse_filter_pictures">"照片" </string>
+    <string name="browse_filter_members">"会员"</string>
+    <string name="browse_filter_text">设置</string>
+
+    <!-- FriendsListFragment -->
+    <string name="friends_list_pic_desc">朋友的一张照片</string>
+    <string name="failed_to_load_friends_list">加载好友列表失败</string>
+    <string name="friends_follower_loading_desc">加载关注</string>
+    <string name="friends_follower_action_bar_desc">关注你的人</string>
+    <string name="friends_following_action_bar_desc">你关注的人</string>
+    <string name="friends_navigation_title">关注</string>
+    <string name="friends_navigation_follower">关注你的人</string>
+    <string name="conversations_navigation_title">私信</string>
+    <string name="following_header_you_have">"已有"</string>
+    <string name="following_header_followers">"个人关注你"</string>
+    <string name="following_header_you_are_following">"你在关注的"</string>
+    <string name="following_header_members">"人"</string>
+    <string name="friends_following_search">搜索你关注的人</string>
+    <string name="friends_following_search_cancle">取消</string>
+    <string name="following_no_search_results">没有找到朋友</string>
+    <string name="following_headerview_tip_text2">检查关注我的人，并且关注他</string>
+
+    <!-- ProfileDetailsFragment -->
+    <string name="profile_details_title">个人信息</string>
+
+    <!-- BrowseMemberFragment -->
+    <string name="browse_member_item_username">用户名</string>
+    <string name="browse_member_item_career_position">公司_职位</string>
+    <string name="browse_member_item_where">城市</string>
+    <string name="browse_member_item_time">时间</string>
+
+    <!-- Gallery -->
+    <string name="gallery_menu_item_desc">相册封面</string>
+    <string name="gallery_image_shadow_desc">阴影效果</string>
+    <string name="gallery_grid_image_desc">相册缩略图</string>
+    <string name="gallery_comment_empty">不能提交空的评论！</string>
+
+    <!-- Comments -->
+    <string name="add_a_comment_hint">添加评论&#8230;</string>
+
+    <!-- Placeholders -->
+    <string name="username_placeholder">用户名</string>
+
+    <!-- User Feed Fragment -->
+    <string name="user_feed_title">用户首页</string>
+    <string name="feed_grid_title">图片</string>
+    <string name="feed_fragment_title">首页</string>
+    <string name="empty_feed_start_sharing_text">开始分享</string>
+    <string name="empty_feed_view_title">用照片诠释生活</string>
+    <string name="empty_feed_view_text">分享你的第一张照片，体验P1独家的滤镜，享受立刻看到超大幅照片的无限乐趣。</string>
+
+    <!-- Notifications Fragment -->
+    <string name="notifications_title">系统消息</string>
+
+    <!-- Friends List Fragment -->
+    <string name="user_profile_bottom_following">已关注</string>
+    <string name="user_profile_bottom_follow">关注</string>
+    <string name="user_profile_bottom_message">发私信</string>
+
+    <!-- Messages Fragment -->
+    <string name="messages_title">私信</string>
+    <string name="failed_to_load_messages_list">加载消息失败</string>
+    <string name="messages_error">错误</string>
+    <string name="messages_sending">发送中</string>
+
+    <!-- Conversations Fragment -->
+    <string name="failed_to_load_conversation_list">加载会话失败</string>
+    <string name="conversation_start_new_conversation">发起聊天</string>
+
+    <!-- Image Descriptions -->
+    <string name="profile_picture_desc">头像图片</string>
+    <string name="like_button_desc">喜欢按钮</string>
+    <string name="comments_button_desc">评论按钮</string>
+    <string name="tag_button_desc">标签按钮</string>
+    <string name="gallery_fullscreen_image_desc">全屏显示</string>
+    <string name="comment_send_button_desc">发送</string>
+
+    <!-- Share Dialog -->
+    <string name="add_caption_hint">给照片写个描述…</string>
+    <string name="add_location_text">添加地点</string>
+    <string name="post_share">分享</string>
+
+    <!-- Venue -->
+    <string name="venue_search_hint">搜索地点&#8230;</string>
+    <string name="venue_title">地点</string>
+
+    <!-- Picture Sharing -->
+    <string name="share_picture_title">分享图片</string>
+    <string name="choose_picture">选择一张图片分享</string>
+    <string name="share_picture_menu_text">添加一个地点</string>
+    <string name="review_awful">糟糕</string>
+    <string name="review_mediocre">一般</string>
+    <string name="review_good">好</string>
+    <string name="review_amazing">精彩!</string>
+    <string name="review_button_text">点击添加评论</string>
+
+    <!-- About -->
+    <string name="about_name">关于</string>
+    <string name="third_party_software">第三方软件</string>
+    <string name="apache_2_0_license">Apache 2.0 License</string>
+    <string name="isc_license">ISC 许可证</string>
+    <string name="error_opening_license">不能打开许可证文件</string>
+    <string name="license">许可证</string>
+
+    <!-- Picture Filter Views -->
+    <string name="filter_clairity">清晰</string>
+    <string name="filter_bw">黑白</string>
+    <string name="filter_dusk">暮色</string>
+    <string name="filter_lomo">Lomo</string>
+    <string name="filter_perception">森色</string>
+    <string name="filter_focus">聚焦</string>
+    <string name="filter_saga">记忆</string>
+    <string name="filter_sunsight">日光</string>
+    <string name="filter_serenity">宁静</string>
+    <string name="filter_lighten">亮化</string>
+    <string name="filter_original">原图</string>
+    <string name="filter_retro">复古</string>
+    <string name="filter_luminance">柔亮</string>
+    <string name="filter_summer">夏日</string>
+    <string name="filter_twilight">夜光</string>
+    <string name="picture_edit_image">最终图片</string>
+
+    <!-- P1 Action Bar -->
+    <string name="actionbar_item_desc">动作栏</string>
+    <string name="todo">任务</string>
+
+    <!-- contentDescription -->
+    <string name="contentDescription">无</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="new_conversation_search_hint">搜索你关注的人</string>
+    <string name="follow_item_default_text">未知</string>
+
+    <!-- Relative timigns for messages -->
+    <string name="date_today">天</string>
+    <string name="date_yesterday">昨天</string>
+    <string name="date_tomorrow">明天</string>
+    <string name="date_year">年</string>
+    <string name="date_year_short">年</string>
+    <string name="date_month">月</string>
+    <string name="date_month_short">月</string>
+    <string name="date_week">周</string>
+    <string name="date_week_short">周</string>
+    <string name="date_day">天</string>
+    <string name="date_day_short">天</string>
+    <string name="time_hour">小时</string>
+    <string name="time_hour_short">小时</string>
+    <string name="time_year">年</string>
+    <string name="time_month">月</string>
+    <string name="time_minute">分钟</string>
+    <string name="time_minute_short">分钟</string>
+    <string name="time_second_short">秒</string>
+    <string name="time_just_now">刚才</string>
+    <string name="time_am">上午</string>
+    <string name="time_pm">下午</string>
+    <string name="time_second">秒</string>
+    <string name="timeline_string">%1$d%2$s%3$s前</string>
+    <string name="write_a_message">发私信</string>
+    <string name="send">发送</string>
+
+    <!-- Notification strings -->
+
+    <string name="noti_mentioned_you_">"提到了你"</string>
+    <string name="noti_in_this_comment">在下面的评论中</string>
+    <string name="noti_on_a_post">在一次分享中</string>
+    <string name="noti_in_a_picture_caption">在图片标题中</string>
+    <string name="noti_this_post">下面的分享</string>
+    <string name="noti_this_picture">下面的照片</string>
+    <string name="noti_picture">照片</string>
+    <string name="noti_share">分享</string>
+    <string name="noti_a_comment_on_your_">评论</string>
+    <string name="noti_your_picture">你的照片</string>
+    <string name="noti_your_post">你的分享</string>
+    <string name="noti_commented_on_">"评论了"</string>
+    <string name="noti_liked_">"喜欢"</string>
+    <string name="noti_started_following_you">关注了你</string>
+
+    <!-- Custom Gallery -->
+    <string name="custom_footer_pictures_selected">张照片</string>
+
+    <!-- Unsorted -->
+    <string name="done">完成</string>
+    <string name="follow">关注</string>
+    <string name="liker_fragment_title">被%1$d人喜欢</string>
+    <string name="failed_to_load_likes_list">加载失败</string>
+    <string name="add_a_comment_">添加评论&#8230;</string>
+    <string name="_comment">" 评论"</string>
+    <string name="_comments">" 条评论"</string>
+    <string name="delete">删除</string>
+    <string name="report_inappropriate">报告不当</string>
+    <string name="cancel">取消</string>
+
+</resources>

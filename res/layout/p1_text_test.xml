@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is the regular TextView"
+                android:textColor="@color/black" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is the default P1TextView"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue Medium 14dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                p1:typeface="helvetica_neue_medium" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue Medium 10dp"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                p1:typeface="helvetica_neue_medium" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue light 14dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                p1:typeface="helvetica_neue_light" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue Light 10dp"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                p1:typeface="helvetica_neue_light" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue Ultra Light 14dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                p1:typeface="helvetica_neue_ultra_light" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue Ultra Light 10dp"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                p1:typeface="helvetica_neue_ultra_light" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue 14dp"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                p1:typeface="helvetica_neue" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue 10dp"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                p1:typeface="helvetica_neue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is the regular TextView"
+                android:textColor="@color/white" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is the default P1TextView"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue Medium 14dp"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                p1:typeface="helvetica_neue_medium" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue Medium 10dp"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                p1:typeface="helvetica_neue_medium" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue light 14dp"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                p1:typeface="helvetica_neue_light" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue Light 10dp"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                p1:typeface="helvetica_neue_light" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue Ultra Light 14dp"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                p1:typeface="helvetica_neue_ultra_light" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue Ultra Light 10dp"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                p1:typeface="helvetica_neue_ultra_light" />
+            
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue 14dp"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                p1:typeface="helvetica_neue" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is Helvetica Neue 10dp"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                p1:typeface="helvetica_neue" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

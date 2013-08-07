@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/actionbar_picture_layout_width"
+    android:layout_height="@dimen/actionbar_picture_view_dimens"  >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="@dimen/actionbar_picture_view_dimens"
+        android:layout_height="@dimen/actionbar_picture_view_dimens"
+        android:background="@drawable/br_profile_pic" >
+
+        <ImageView
+            android:id="@+id/userPictureImageView"
+            android:layout_width="@dimen/actionbar_picture_view_dimens"
+            android:layout_height="@dimen/actionbar_picture_view_dimens"
+            android:contentDescription="@string/todo"
+            android:padding="1dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/notificationsHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

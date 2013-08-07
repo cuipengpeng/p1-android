@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:id="@+id/cover_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/shadow_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/cover_shadow"
+        android:contentDescription="@string/gallery_image_shadow_desc" />
+
+</merge>

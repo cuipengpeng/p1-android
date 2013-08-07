@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_browse_fragment_list_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_browse_fragment_list_profile"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:layout_margin="6dip"
+            android:contentDescription="@string/contentDescription" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="6dip"
+            android:minWidth="50dp"
+            android:orientation="horizontal" >
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/chat_list_item_message"
+                style="@style/P1MediumTextDark"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoLink="web"
+                android:background="@drawable/chat_bubble_white"
+                android:gravity="center_vertical|left"
+                android:minHeight="30dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/message_text_size"
+                p1:typeface="helvetica_neue" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/chat_list_item_message_time"
+                style="@style/P1SmallTextDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dip"
+                android:textColor="@color/white"
+                android:textSize="@dimen/time_text_size"
+                p1:typeface="helvetica_neue" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3" />
+
+</LinearLayout>

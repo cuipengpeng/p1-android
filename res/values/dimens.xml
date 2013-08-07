@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="login_image_padding">30dp</dimen>
+    <dimen name="friendslist_item_padding">3dp</dimen>
+    <dimen name="shadow_width">8dp</dimen>
+    <dimen name="default_header_height">180dp</dimen>
+    <dimen name="profile_picture_padding">12dp</dimen>
+    <dimen name="list_item_height">48dp</dimen>
+    <dimen name="two_pixel_divider_height">2dp</dimen>
+    <dimen name="friends_list_item_height">80dp</dimen>
+    <dimen name="gallery_gallery_item_height">150dp</dimen>
+    <dimen name="shadow_height">60dp</dimen>
+    <dimen name="gallery_grid_spacing">4dp</dimen>
+    <dimen name="gallery_grid_padding">4dp</dimen>
+    <dimen name="image_button_padding">8dp</dimen>
+    <dimen name="line_left_right_padding">10dp</dimen>
+    <dimen name="comment_caption_text_size">12dp</dimen>
+    <dimen name="small_text_size">10dp</dimen>
+    <dimen name="post_button_text_padding">20dp</dimen>
+    <dimen name="picture_selection_padding">4dp</dimen>
+    <dimen name="big_text_padding">16dp</dimen>
+    <dimen name="default_camera_button_padding">4dp</dimen>
+    <dimen name="slidingmenu_offset">50dp</dimen>
+    <dimen name="defaul_list_item_text_padding">8dp</dimen>
+    <dimen name="photo_tag_textSize">12dp</dimen>
+    <dimen name="header_height">60dp</dimen>
+    <dimen name="share_rating_button_size">80dp</dimen>
+    <dimen name="filter_text_size">10dp</dimen>
+    <dimen name="default_item_padding">8dp</dimen>
+    <dimen name="following_search_margin">5dp</dimen>
+    <dimen name="following_search_height">42dp</dimen>
+    <dimen name="default_item_padding_small">4dp</dimen>
+    <dimen name="user_profile_cover_height">200dp</dimen>
+    <dimen name="relationship_status_imageview_height">25dp</dimen>
+    <dimen name="relationship_status_padding">20dp</dimen>
+    <dimen name="relationship_status_textview_margin">15dp</dimen>
+
+    <!-- SettingFragment -->
+    <dimen name="setting_padding">10dp</dimen>
+    <dimen name="setting_item_height">41dp</dimen>
+
+    <!-- Following -->
+    <dimen name="following_headerview_margin">10dp</dimen>
+    <dimen name="following_headerview_text_margin">3dp</dimen>
+    <dimen name="following_headerview_tip_text_size">12sp</dimen>
+    <dimen name="following_item_padding">5dp</dimen>
+    
+    <!-- Feed Liker list -->
+    <dimen name="liker_headerview_margin">10dp</dimen>
+    <dimen name="liker_headerview_text_margin">3dp</dimen>
+    <dimen name="liker_headerview_tip_text_size">10sp</dimen>
+    <dimen name="liker_headerview_padding">3dp</dimen>
+    <dimen name="liker_item_padding">3dp</dimen>
+    <dimen name="like_button_text_size">14sp</dimen>
+    
+
+    <!-- ActionBar -->
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="actionbar_height_with_shadow">51dp</dimen>
+    <dimen name="actionbar_shadow">3dp</dimen>
+    <dimen name="auto_hide_height">46dp</dimen>
+    <dimen name="actionbar_and_auto_hide_height">94dp</dimen>
+    <dimen name="actionbar_and_auto_hide_height_padding">100dp</dimen>
+    <dimen name="actionbar_item_height">48dp</dimen>
+    <dimen name="actionbar_item_width">48dp</dimen>
+    <dimen name="actionbar_toggle_width">250dp</dimen>
+    <dimen name="actionbar_picture_layout_width">40dp</dimen>
+    <dimen name="actionbar_picture_view_dimens">30dp</dimen>
+    <dimen name="actionbar_following">93dp</dimen>
+
+    <!-- BrowseFilterActivity -->
+    <dimen name="round_corner">6dp</dimen>
+    <dimen name="round_corner_small">3dp</dimen>
+    <dimen name="browse_filter_title">20sp</dimen>
+    <dimen name="browse_filter_tip_size">16sp</dimen>
+    <dimen name="browse_filter_text_size">18sp</dimen>
+    <dimen name="browse_filter_margin">10dp</dimen>
+    <dimen name="browse_filter_member_picture_height">80dp</dimen>
+    <dimen name="browse_member_username_text_size">14sp</dimen>
+    <dimen name="browse_member_other_text_size">12sp</dimen>
+    <dimen name="browse_member_item_margin">6dp</dimen>
+
+    <!-- Conversations -->
+    <dimen name="compose_text_size">14sp</dimen>
+    <dimen name="conversation_list_username_text_size">15sp</dimen>
+    <dimen name="conversation_list_msg_text_size">12sp</dimen>
+    <dimen name="conversation_list_time_text_size">12sp</dimen>
+
+    
+    <!-- Notifications -->
+    <dimen name="Notification_time_text_size">12sp</dimen>
+    
+    
+    <!-- Chat messages Sized -->
+    <dimen name="message_text_size">13sp</dimen>
+    <dimen name="time_text_size">10sp</dimen>
+    <dimen name="date_text_size">12sp</dimen>
+    <dimen name="send_msg_text_size">12sp</dimen>
+    <dimen name="send_bar_button_text_size">14sp</dimen>
+    <!-- Picture View Pager -->
+    <dimen name="picture_view_pager_buttons_margin">8dp</dimen>
+
+    <!-- Feed -->
+    <dimen name="feed_image_padding">5dp</dimen>
+    <dimen name="quickaction_height">48dp</dimen>
+    <dimen name="empty_feed_view_padding">72dp</dimen>
+    <dimen name="empty_feed_view_text_padding">18dp</dimen>
+    <dimen name="empty_feed_view_item_margin">20dp</dimen>
+
+    <!-- Custom Gallery -->
+    <dimen name="custom_gallery_item_checkbutton_size">32dp</dimen>
+
+</resources>

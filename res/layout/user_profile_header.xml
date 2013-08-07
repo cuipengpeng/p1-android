@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.p1.mobile.p1android.ui.view.OptimizedImageView
+        android:id="@+id/userCoverPicture"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/user_profile_cover_height"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/cover_default" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/shadow_height"
+        layout="@layout/gradient_shadow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/userCoverPicture"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+        <LinearLayout
+            android:id="@+id/side_panel_profile_summary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/br_profile_pic" >
+
+                <ImageView
+                    android:id="@+id/userProfilePicture"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:contentDescription="@string/profile_picture_decription"
+                    android:padding="1dp"
+                    android:src="@drawable/side_panel_profile" />
+            </RelativeLayout>
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/userProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_sliding_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:orientation="horizontal"
+            android:padding="@dimen/profile_picture_padding" >
+
+            <View
+                android:id="@+id/slideout_profile_visibility"
+                android:layout_width="16dp"
+                android:layout_height="17dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/slideout_profile_invisible"
+                android:duplicateParentState="true"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="17dp"
+                android:background="@drawable/slideout_profile_settings"
+                android:duplicateParentState="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

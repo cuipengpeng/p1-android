@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/itemListName"
+        style="@style/P1LargerTextDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/defaul_list_item_text_padding"
+        android:textIsSelectable="false" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.P1ThemeLight" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.FullscreenOverlay" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.P1V3" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowBackground">@color/default_background</item>
+        <item name="android:colorBackground">@color/default_background</item>
+    </style>
+
+    <style name="Theme.P1V3.PicBackground" parent="@android:style/Theme.NoTitleBar">
+    </style>
+</resources>

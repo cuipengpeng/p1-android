@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.p1.mobile.p1android.ui.widget.P1Button xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btn_edit_user_info_save"
+    style="@style/P1ButtonBlackActionBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="30dip"
+    android:minWidth="64dip"
+    android:scaleType="centerCrop"
+    p1:typeface="helvetica_neue" />

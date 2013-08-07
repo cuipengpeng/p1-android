@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customGalleryFooterParent"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:background="@color/black_opaque" >
+
+    <com.p1.mobile.p1android.ui.widget.P1Button
+        android:id="@+id/customGalleryDoneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/send_button_selector"
+        android:text="@string/done"
+        android:textColor="@color/white2semitransparent" />
+
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:id="@+id/customGalleryTextView"
+        style="@style/P1SmallTextLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:paddingLeft="8dp" />
+
+</RelativeLayout>

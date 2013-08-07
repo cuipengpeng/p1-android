@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.p1.mobile.p1android.ui.widget.P1Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparant"
+    android:textColor="@color/white"
+    android:padding="@dimen/defaul_list_item_text_padding"
+    android:textSize="@dimen/filter_text_size" >
+
+</com.p1.mobile.p1android.ui.widget.P1Button>

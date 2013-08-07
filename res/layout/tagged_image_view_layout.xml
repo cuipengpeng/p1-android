@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clipChildren="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.p1.mobile.p1android.ui.view.OptimizedImageView
+        android:id="@+id/taggedImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_action_camera" />
+
+</RelativeLayout>

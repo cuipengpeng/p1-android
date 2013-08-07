@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/shadow_gradient_invert" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/default_background"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" >
+
+        <com.p1.mobile.p1android.ui.widget.P1EditText
+            android:id="@+id/sendbar_msg_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/editextview"
+            android:gravity="center_vertical"
+            android:hint="@string/add_a_comment_hint"
+            android:imeOptions="actionSend"
+            android:maxLines="2"
+            android:scrollbars="vertical"
+            android:paddingLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/send_msg_text_size" />
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/sendbar_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/btn_blue_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/send"
+            android:textSize="@dimen/send_bar_button_text_size"
+            android:includeFontPadding="false"
+            android:textColor="@color/white2semitransparent"
+            p1:typeface="helvetica_neue_bold"
+             />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/default_selector_list_item"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    tools:ignore="UseCompoundDrawables" >
+
+    <!-- android:background="@color/folow_list_item_grey" -->
+
+    <ImageView
+        android:id="@+id/follow_list_picture"
+        android:layout_width="54dip"
+        android:layout_height="54dip"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/following_item_padding"
+        android:background="@drawable/profile_shadow"
+        android:contentDescription="@string/contentDescription" />
+
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:id="@+id/follow_list_text"
+        style="@style/P1MediumTextGray"
+        android:layout_width="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/friendslist_item_padding"
+        android:text="@string/follow_item_default_text"
+        android:textColor="@color/follow_black2white"
+        android:textIsSelectable="false"
+        p1:typeface="helvetica_neue" />
+
+    <com.p1.mobile.p1android.ui.widget.P1ToggleButton
+        android:id="@+id/follow_button"
+        style="@style/P1ButtonBuleSmallBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/followed_xml"
+        android:checked="true"
+        android:minHeight="40dp"
+        android:minWidth="81dp"
+        android:textOff="@string/follow"
+        android:textOn=" " />
+
+</LinearLayout>

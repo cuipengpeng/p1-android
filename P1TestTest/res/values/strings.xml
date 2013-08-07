@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">P1TestTest</string>
+    <string name="sample_account_json">{"data":{"accounts":[{"owner":{"id":101,"type":"user"},"states":{"welcome_screen":false,"pending":false,"frozen":false,"remaining_invitations":0,"confirmed_email":true},"settings":{"language":"en-US","email":"patrick.trillsam@gmail.com","notifications":{"messages":true,"wall_posts":true,"friendship_events":true,"comments":false,"likes":false,"picture_tags":true},"privacy":{"sharing":"good","wall_posts":"good","birthdate":"good"}},"type":"account","etag":"0082c207c5165d87ffbba93bc225396d"}]},"pagination":{"offset":0,"limit":100,"total":1}}</string>
+
+</resources>

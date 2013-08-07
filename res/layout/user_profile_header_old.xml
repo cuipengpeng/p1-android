@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.p1.mobile.p1android.ui.view.AspectRatioImageView
+        android:id="@+id/userCoverPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/contentDescription"
+        android:layout_gravity="bottom" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" >
+
+        <include layout="@layout/gradient_shadow"
+            android:layout_height="@dimen/shadow_height"
+            android:layout_width="fill_parent"/>
+
+        <com.p1.mobile.p1android.ui.widget.P1TextView
+            android:id="@+id/userProfileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textIsSelectable="false"
+            android:layout_toRightOf="@+id/userProfilePicture"
+            android:paddingBottom="@dimen/profile_picture_padding"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/userProfilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/profile_picture_decription"
+            android:padding="@dimen/profile_picture_padding"
+            android:src="@drawable/ic_launcher" />
+
+    </RelativeLayout>
+
+</FrameLayout>

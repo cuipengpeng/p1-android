@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner_shape_white"
+            android:gravity="center_horizontal" >
+
+            <EditText
+                android:id="@+id/et_edit_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:ems="10"
+                android:gravity="top|left"
+                android:hint=""
+                android:minLines="5"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/black" >
+            </EditText>
+        </RelativeLayout>
+
+        <com.p1.mobile.p1android.ui.widget.P1TextView
+            android:id="@+id/tv_edit_user_info_desc"
+            style="@style/P1SmallTextGray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text=""
+            p1:typeface="helvetica_neue" />
+    </LinearLayout>
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/user_profile_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

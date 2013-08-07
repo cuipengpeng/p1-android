@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="landing_slide_titles">
+        <item>Express yourself, Get inspired</item>
+        <item>A beautiful picture sharing experience</item>
+        <item>Discover the community</item>
+        <item>Connect with people</item>
+    </string-array>
+    <string-array name="landing_slide_subtitles">
+        <item> </item>
+        <item>The new P1 is designed with photo-lovers in mind.  Large photo views, photo filters makes your photo sharing smoother than ever.</item>
+        <item>Explore the world around you through images. Use the “Browse” and find pictures and people with similar taste. The community is waiting to be discovered.</item>
+        <item>Find and connect to your friends, follow interesting people and never miss what they are up to.</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/browse_filter_background" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="64dp" >
+
+            <!-- filter by -->
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                style="@style/P1MediumTextGray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/browse_filter_margin"
+                android:text="@string/browse_filter_filter_by"
+                p1:typeface="helvetica_neue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/browse_filter_margin"
+                android:background="@drawable/round_corner_shape"
+                android:divider="@drawable/settings_list_divider"
+                android:orientation="vertical"
+                android:showDividers="middle" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_browse_filter_sort_by_latest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center" >
+
+                    <com.p1.mobile.p1android.ui.widget.P1TextView
+                        android:id="@+id/tv_browse_filter_sort_by_latest"
+                        style="@style/P1MediumTextDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/browse_filter_recent"
+                        p1:typeface="helvetica_neue_light" />
+
+                    <ImageView
+                        android:id="@+id/iv_browse_filter_sort_by_latest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/contentDescription"
+                        android:src="@drawable/browse_filter_select" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_browse_filter_sort_by_popular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center" >
+
+                    <com.p1.mobile.p1android.ui.widget.P1TextView
+                        android:id="@+id/tv_browse_filter_sort_by_popular"
+                        style="@style/P1MediumTextDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/browse_filter_popular"
+                        p1:typeface="helvetica_neue_light" />
+
+                    <ImageView
+                        android:id="@+id/iv_browse_filter_sort_by_popular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/contentDescription"
+                        android:src="@drawable/browse_filter_select" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_browse_filter_sort_by_random"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center" >
+
+                    <com.p1.mobile.p1android.ui.widget.P1TextView
+                        android:id="@+id/tv_browse_filter_sort_by_random"
+                        style="@style/P1MediumTextDark"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dip"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="8dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/browse_filter_random"
+                        p1:typeface="helvetica_neue_light" />
+
+                    <ImageView
+                        android:id="@+id/iv_browse_filter_sort_by_random"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:contentDescription="@string/contentDescription"
+                        android:src="@drawable/browse_filter_select" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- gender -->
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                style="@style/P1MediumTextGray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/browse_filter_margin"
+                android:layout_marginTop="20dip"
+                android:text="@string/browse_filter_gender"
+                p1:typeface="helvetica_neue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/browse_filter_margin"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.p1.mobile.p1android.ui.widget.P1Button
+                    android:id="@+id/btn_browse_filter_gender_all"
+                    android:layout_width="0dp"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/browse_filter_gender_all_selector"
+                    android:gravity="center"
+                    android:scaleType="centerCrop"
+                    android:text="@string/browse_filter_all"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/browse_filter_tip_size"
+                    p1:typeface="helvetica_neue_light" />
+
+                <ImageButton
+                    android:id="@+id/ib_browse_filter_gender_female"
+                    android:layout_width="0dp"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/browse_filter_gender_female_selector"
+                    android:contentDescription="@string/contentDescription"
+                    android:gravity="center"
+                    android:src="@drawable/browse_member_female" />
+
+                <ImageButton
+                    android:id="@+id/ib_browse_filter_gender_male"
+                    android:layout_width="0dp"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/browse_filter_gender_male_selector"
+                    android:contentDescription="@string/contentDescription"
+                    android:gravity="center"
+                    android:src="@drawable/browse_member_male" />
+            </LinearLayout>
+
+            <com.p1.mobile.p1android.ui.widget.P1Button
+                android:id="@+id/tv_browse_filter_finish"
+                style="@style/P1ButtonBuleBold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/browse_filter_done"
+                android:textSize="@dimen/browse_filter_text_size"
+                p1:typeface="helvetica_neue" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

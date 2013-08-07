@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="p1_transparent_ActionBar" >
+        <item name="android:background">@drawable/ab_transparent_p1</item>
+    </style>
+
+    <style name="p1_translucent_ActionBar" parent="@style/p1_transparent_ActionBar">
+        <item name="android:background">@color/translucent_grey</item>
+        <item name="android:backgroundSplit" tools:targetApi="14">@color/translucent_grey</item>
+    </style>
+
+</resources>

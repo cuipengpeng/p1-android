@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp" >
+
+    <com.p1.mobile.p1android.ui.view.SquareImageView
+        android:id="@+id/iv_user_profile_item1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/browse_pictures_grid_bg"
+        android:contentDescription="@string/contentDescription"
+        android:scaleType="fitXY" />
+
+    <com.p1.mobile.p1android.ui.view.SquareImageView
+        android:id="@+id/iv_user_profile_item2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/browse_pictures_grid_bg"
+        android:contentDescription="@string/contentDescription"
+        android:scaleType="fitXY" />
+
+    <com.p1.mobile.p1android.ui.view.SquareImageView
+        android:id="@+id/iv_user_profile_item3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/browse_pictures_grid_bg"
+        android:contentDescription="@string/contentDescription"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

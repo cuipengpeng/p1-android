@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:drawable="@drawable/empty_feed_bg"
+    android:insetTop="@dimen/empty_feed_view_padding"
+    android:insetBottom="@dimen/empty_feed_view_padding" />

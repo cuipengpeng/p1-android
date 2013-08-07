@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.87" >
+    
+    <LinearLayout
+        android:id="@+id/scroller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dip"
+        android:layout_marginTop="0dip"
+        android:background="@drawable/rating_background_v2"
+        android:fadingEdgeLength="5dip"
+        android:scrollbars="none" >
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/awfulButton"
+            android:layout_width="@dimen/share_rating_button_size"
+            android:layout_height="@dimen/share_rating_button_size"
+            android:layout_weight="25"
+            android:drawableTop="@drawable/transition_awful"
+            android:maxLines="1"
+            android:text="@+string/review_awful"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+	        android:shadowDy="-1"
+	        android:shadowRadius="1"
+            android:padding="10dp"
+            android:background="@color/transparant"
+            android:textSize="@dimen/photo_tag_textSize" />
+        
+        <View 
+            android:id="@+id/separator1"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/vertical_separator"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="-2dp"
+            />
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/mediocreButton"
+
+            android:layout_width="@dimen/share_rating_button_size"
+            android:layout_height="@dimen/share_rating_button_size"
+            android:layout_weight="25"
+            android:drawableTop="@drawable/transition_mediocre"
+            android:maxLines="1"
+            android:text="@+string/review_mediocre"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+	        android:shadowDy="-1"
+	        android:shadowRadius="1"
+            android:padding="10dp"
+            android:background="@color/transparant"
+            android:textSize="@dimen/photo_tag_textSize" />
+        
+        <View 
+            android:id="@+id/separator2"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/vertical_separator"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="-2dp"
+            />
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/goodButton"
+            android:layout_width="@dimen/share_rating_button_size"
+            android:layout_height="@dimen/share_rating_button_size"
+            android:layout_weight="25"
+            android:drawableTop="@drawable/transition_good"
+            android:maxLines="1"
+            android:text="@+string/review_good" 
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+	        android:shadowDy="-1"
+	        android:shadowRadius="1"
+            android:padding="10dp"
+            android:background="@color/transparant"
+            android:textSize="@dimen/photo_tag_textSize" />
+        
+        <View 
+            android:id="@+id/separator3"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/vertical_separator"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="-2dp"
+            />
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/amazingButton"
+            android:layout_width="@dimen/share_rating_button_size"
+            android:layout_height="@dimen/share_rating_button_size"
+            android:layout_weight="25"
+            android:drawableTop="@drawable/transition_amazing"
+            android:maxLines="1"
+            android:text="@+string/review_amazing" 
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+	        android:shadowDy="-1"
+	        android:shadowRadius="1"
+            android:padding="10dp"
+            android:background="@color/transparant"
+            android:textSize="@dimen/photo_tag_textSize" />
+        
+        <View
+            android:id="@+id/separator4"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="-2dp"
+            android:background="@drawable/vertical_separator"
+            android:visibility="gone" />
+        
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/reviewButton"
+            android:layout_width="240dp"
+            android:layout_height="@dimen/share_rating_button_size"
+            android:layout_gravity="center"
+            android:layout_weight="75"
+            android:maxLines="1"
+            android:padding="0dp"
+            android:text="@+string/review_button_text"
+            android:textColor="@color/white"
+            android:shadowColor="#000000"
+	        android:shadowDy="-1"
+	        android:shadowRadius="1"
+            android:textSize="20sp"
+            android:background="@color/transparant"
+            android:visibility="gone" />
+
+    </LinearLayout >
+
+
+    <ImageView
+        android:id="@+id/arrow_down"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_below="@id/scroller"
+        android:layout_marginTop="-28dip"
+        android:src="@drawable/rating_arrow_down" />
+    
+
+</RelativeLayout>

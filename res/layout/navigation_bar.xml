@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:background="@drawable/nev_back" >
+
+        <ImageButton
+            android:id="@+id/navigation_feed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/navigation_button_background"
+            android:contentDescription="@string/actionbar_item_desc"
+            android:padding="3dp"
+            android:src="@drawable/ic_navbar_feed" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="4px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/nev_divider" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:background="@drawable/nev_back" >
+
+        <ImageButton
+            android:id="@+id/navigation_browse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/navigation_button_background"
+            android:contentDescription="@string/actionbar_item_desc"
+            android:src="@drawable/ic_navbar_browse" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="4px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/nev_divider" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:background="@drawable/nev_back" >
+
+        <ImageButton
+            android:id="@+id/navigation_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/navigation_button_background"
+            android:contentDescription="@string/actionbar_item_desc"
+            android:src="@drawable/ic_navbar_camera_unselected" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="4px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/nev_divider" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:background="@drawable/nev_back" >
+
+        <ImageButton
+            android:id="@+id/navigation_followers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/navigation_button_background"
+            android:contentDescription="@string/actionbar_item_desc"
+            android:src="@drawable/ic_navbar_followers" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="4px"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/nev_divider" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:background="@drawable/nev_back" >
+
+        <RelativeLayout
+            android:id="@+id/messagesHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right" />
+
+        <ImageButton
+            android:id="@+id/navigation_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/navigation_button_background"
+            android:contentDescription="@string/actionbar_item_desc"
+            android:src="@drawable/ic_navbar_chat" />
+    </FrameLayout>
+
+</LinearLayout>

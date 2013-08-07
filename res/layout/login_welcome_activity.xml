@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/landing_page_background" />
+
+    <RelativeLayout
+        android:id="@+id/login_welcome_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.p1.mobile.p1android.ui.view.AspectRatioImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:minWidth="144dp"
+            android:paddingBottom="196dp"
+            android:src="@drawable/landing_page_slide_1" />
+
+        <com.p1.mobile.p1android.ui.view.AspectRatioImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="-72dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:scaleType="centerCrop" />
+
+        <com.p1.mobile.p1android.ui.view.AspectRatioImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="24dp"
+            android:paddingBottom="-24dp"
+            android:paddingRight="-24dp"
+            android:paddingLeft="48dp" />
+
+        <com.p1.mobile.p1android.ui.view.AspectRatioImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="24dp"
+            android:paddingBottom="-24dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="-24dp"
+            android:paddingRight="48dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/login_welcome_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/login_welcome_page_indicator"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.p1.mobile.p1android.ui.widget.P1Button
+                android:id="@+id/login_welcome_longin"
+                style="@style/P1ButtonBuleBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:text="@string/login" />
+
+            <com.p1.mobile.p1android.ui.widget.P1Button
+                android:id="@+id/login_welcome_apply"
+                style="@style/P1ButtonBlackBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:minHeight="48dp"
+                android:text="@string/apply" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

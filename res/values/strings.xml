@@ -1,0 +1,330 @@
+<resources>
+
+    <string name="album_all">All albums</string>
+
+    <string name="at">"At "</string>
+    <!-- Cache Names -->
+    <string name="app_name">P1</string>
+    <string name="profile_picture_decription">User Profile Picture</string>
+    <string name="cover_picture_decription">User Cover Picture</string>
+    
+	<string name="failed_to_load">Failed to refresh, please make sure you have an internet connection and then try again</string>
+    <!-- LoginActivity -->
+    <string name="login">Sign in</string>
+    <string name="apply">Apply</string>
+    <string name="uploading">Uploading...</string>
+    <string name="failed">Failed to upload, tap to try again</string>
+    <string name="reset_password">Reset password</string>
+    <string name="forget_password">Forget your password?</string>
+    <string name="usernamehint">Username</string>
+    <string name="passwordhint">Password</string>
+    <string name="login_wrong_title">Login failed</string>
+    <string name="login_wrong_credentials">Make sure you entered a correct email address and password</string>
+    <string name="login_wrong_password">Please enter correct password</string>
+    <string name="login_failed_connection">Login failed, please make sure you have an internet connection and then try again</string>
+    <string name="login_empty_credentials">Please enter both username and password</string>
+    <string name="login_forget_success">You password has been reset. Please check your email to retrieve your new password</string>
+    <string name="login_forget_failed">Password reset failed. Please enter the correct email address and try again</string>
+    <string name="dev_username">patrick.trillsam@gmail.com</string>
+    <string name="dev_password">topsecret</string>
+
+    <!-- ApplyActivity -->
+    <string name="apply_failed">Please check your connection and try again</string>
+    <string name="apply_missing_info">Please fill in all the information below before submitting</string>
+    <string name="apply_success">Your membership application has been sent to P1.\nWe\'ll keep you in touch</string>
+    <string name="apply_title">Membership</string>
+    <string name="apply_fistname">First name</string>
+    <string name="apply_lastname">Last name</string>
+    <string name="apply_email">Email address</string>
+    <string name="apply_text">P1 is a private community\n\nPlease fill in the information below to apply for membership. You will receive an invitation by email upon approval. Thank you for your interest.</string>
+
+    <!-- SettingFragment -->
+    <string name="setting_title">Settings</string>
+    <string name="setting_invisible_mode">Invisible mode</string>
+    <string name="setting_invisible_mode_tip1">While invisible your profile and your pictures \n won\'t be shown in browse</string>
+    <string name="setting_change_profile_picture">Change your profile picture</string>
+    <string name="setting_change_cover_picture">Change cover picture</string>
+    <string name="setting_edit_personal_information">Edit my personal information</string>
+    <string name="setting_email">Email</string>
+    <string name="setting_change_passwd">Change your password</string>
+    <string name="setting_sign_out">Sign out</string>
+    <string name="setting_switch_off">OFF</string>
+    <string name="setting_switch_on">ON</string>
+
+    <!-- ChangePasswordFragment -->
+    <string name="change_passwd_title">Change Password</string>
+    <string name="change_passwd_current_passwd">Current password</string>
+    <string name="change_passwd_new_passwd">New Password</string>
+    <string name="change_passwd_confirm_passwd">Confirm password</string>
+    <string name="change_passwd_dialog_passwd_at_least">Passworsd must be at least six \ncharacters</string>
+    <string name="change_passwd_dialog_not_match">Password didn\'t match</string>
+    <string name="change_passwd_dialog_update_success">Password updated successfully</string>
+    <string name="change_passwd_dialog_password_incorrect">Old password is incorrect, please \ntry again</string>
+    <string name="dialog_ok">OK</string>
+
+    <!-- UserProfileFragment -->
+    <string name="user_profile_edit">Edit</string>
+
+    <!-- EditProfileFragment -->
+    <string name="edit_profile_title">Edit your profile</string>
+    <string name="edit_profile_description">Description</string>
+    <string name="edit_profile_desc_yourself">Say something about yourself</string>
+    <string name="edit_profile_given_name">Given name</string>
+    <string name="edit_profile_family_name">Family name</string>
+    <string name="edit_profile_school">School</string>
+
+    <!-- EditUserInfoFragment -->
+    <string name="edit_user_info_email">Email can\'t be null !</string>
+    <string name="edit_user_info_given_name">Given name can\'t be null !</string>
+    <string name="edit_user_info_family_name">Family name can\'t be null !</string>
+    <string name="edit_user_info_save">Save</string>
+    <string name="edit_user_info_update">Update</string>
+    <string name="edit_user_info_bottom_desc">Write a description</string>
+    <string name="edit_user_info_bottom_given_name">Input your Given name</string>
+    <string name="edit_user_info_bottom_family_name">Input your Family Name</string>
+    <string name="edit_user_info_bottom_school">Input your school</string>
+    <string name="edit_user_info_bottom_position">What is your position?</string>
+    <string name="edit_user_info_bottom_company">Where do you work?</string>
+    <string name="edit_user_info_bottom_location">Input your location</string>
+    <string name="dialog_title">End editing</string>
+    <string name="dialog_message">Are you sure you want to end \nediting without saving your \nchanges?</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_discard">Discard Changes</string>
+
+    <!-- Zodiac --> 
+    <string name="zodiac_aries">Aries</string>
+    <string name="zodiac_taurus">Taurus</string>
+    <string name="zodiac_gemini">Gemini</string>
+    <string name="zodiac_cancer">Cancer</string>
+    <string name="zodiac_leo">Leo</string>
+    <string name="zodiac_virgo">Virgo</string>
+    <string name="zodiac_libra">Libra</string>
+    <string name="zodiac_scorpio">Scorpio</string>
+    <string name="zodiac_sagittarus">Sagittarus</string>
+    <string name="zodiac_capricornus">Capricornus</string>
+    <string name="zodiac_aquarius">Aquarius</string>
+    <string name="zodiac_pisces">Pisces</string>
+    
+    <!-- BloodTypeFragment -->
+    <string name="blood_type_a">A</string>
+    <string name="blood_type_b">B</string>
+    <string name="blood_type_ab">AB</string>
+    <string name="blood_type_o">O</string>
+    <string name="blood_type_unknown">Unknown</string>
+    
+    <!-- RelationshipStatusFragment -->
+    <string name="relationship_ship_single">Single</string>
+    <string name="relationship_ship_in_relationship">In a relationship</string>
+    <string name="relationship_ship_engaged">Engaged</string>
+    <string name="relationship_ship_married">Married</string>
+    <string name="relationship_ship_complicated">It\'s complicated</string>
+    <string name="relationship_ship_private">Private</string>
+    
+    <!-- ProfileDetailFragment -->
+    <string name="profile_detail_personal">Personal</string>
+    <string name="profile_detail_professional">Professional</string>
+    <string name="profile_detail_relationship">Relationship status</string>
+    <string name="profile_detail_zodiac">Zodiac</string>
+    <string name="profile_detail_blood_type">Blood Type</string>
+    <string name="profile_detail_school">School</string>
+    <string name="profile_detail_position">Position</string>
+    <string name="profile_detail_company">Company</string>
+    <string name="profile_detail_location">Location</string>
+    <string name="profile_detail_unknown">Unknown</string>
+
+    <!-- BrowseFilterActivity -->
+    <string name="browse_filter_title">Filter</string>
+    <string name="browse_filter_filter_by">Filter By</string>
+    <string name="browse_filter_recent">Recent</string>
+    <string name="browse_filter_popular">Popular</string>
+    <string name="browse_filter_random">Randomize</string>
+    <string name="browse_filter_gender">Gender</string>
+    <string name="browse_filter_all">All</string>
+    <string name="browse_filter_done">Done</string>
+    <string name="browse_filter_pictures">" pictures" </string>
+    <string name="browse_filter_members">" members"</string>
+    <string name="browse_filter_text">Filters</string>
+
+    <!-- FriendsListFragment -->
+    <string name="friends_list_pic_desc">A picture of your friend</string>
+    <string name="failed_to_load_friends_list">Failed to load friends list.</string>
+    <string name="friends_follower_loading_desc">Loading followers</string>
+    <string name="friends_follower_action_bar_desc">Your followers</string>
+    <string name="friends_following_action_bar_desc">Your are following</string>
+    <string name="friends_navigation_title">Following</string>
+    <string name="friends_navigation_follower">Followers</string>
+    <string name="conversations_navigation_title">Messages</string>
+    <string name="friends_following_search">Search for friends</string>
+    <string name="friends_following_search_cancle">Cancle</string>
+    <string name="following_no_search_results">No search results</string>
+    <string name="following_headerview_tip_text2">Check them out and follow them back!</string>
+    <string name="following_header_you_have">"You have "</string>
+    <string name="following_header_followers">" followers"</string>
+    <string name="following_header_you_are_following">"You are following "</string>
+    <string name="following_header_members">" members"</string>
+    
+    
+    <!-- ProfileDetailsFragment -->
+    <string name="profile_details_title">Profile details</string>
+
+    <!-- BrowseMemberFragment -->
+    <string name="browse_member_item_username">username</string>
+    <string name="browse_member_item_career_position">career_position</string>
+    <string name="browse_member_item_where">where</string>
+    <string name="browse_member_item_time">time</string>
+
+    <!-- Gallery -->
+    <string name="gallery_menu_item_desc">Cover for the gallery</string>
+    <string name="gallery_image_shadow_desc">Shadow effect</string>
+    <string name="gallery_grid_image_desc">Gallery thumbnail</string>
+    <string name="gallery_comment_empty">Can not post empty comment!</string>
+
+    <!-- Comments -->
+    <string name="add_a_comment_hint">Add a comment&#8230;</string>
+
+    <!-- Placeholders -->
+    <string name="username_placeholder">User Name</string>
+
+    <!-- User Feed Fragment -->
+    <string name="user_feed_title">User Feed</string>
+    <string name="feed_grid_title">pictures</string>
+    <string name="feed_fragment_title">Feed</string>
+    <string name="empty_feed_start_sharing_text">Start sharing</string>
+    <string name="empty_feed_view_title">Welcome to a new P1 experience</string>
+    <string name="empty_feed_view_text">Express yourself and what you love through great pictures. Sharing has never been easier and photo filters have never been better.</string>
+
+    <!-- Notifications Fragment -->
+    <string name="notifications_title">Notifications</string>
+
+    <!-- Friends List Fragment -->
+    <string name="user_profile_bottom_following">Following</string>
+    <string name="user_profile_bottom_follow">Follow</string>
+    <string name="user_profile_bottom_message">Message</string>
+
+    <!-- Messages Fragment -->
+    <string name="failed_to_load_messages_list">Failed to load messages.</string>
+    <string name="messages_error">Error</string>
+    <string name="messages_sending">Sending</string>
+
+    <!-- Conversations Fragment -->
+    <string name="failed_to_load_conversation_list">Failed to load conversations.</string>
+    <string name="conversation_start_new_conversation">Start a new conversation</string>
+    <string name="no_followers_or_following">Your followers list is empty and no one follows you.</string>
+    
+    <!-- Image Descriptions -->
+    <string name="like_button_desc">Like button</string>
+    <string name="comments_button_desc">Comments button</string>
+    <string name="gallery_fullscreen_image_desc">Fullscreen image</string>
+
+    <!-- Share Dialog -->
+    <string name="add_caption_hint">Add a caption (press @ to mention friends) …</string>
+    <string name="add_location_text">No location selected</string>
+    <string name="post_share">Share</string>
+
+    <!-- Venue -->
+    <string name="venue_search_hint">Search for a venue&#8230;</string>
+    <string name="venue_title">Location</string>
+
+    <!-- Picture Sharing -->
+    <string name="choose_picture">Choose a picture to share</string>
+    <string name="review_awful">Avoid</string>
+    <string name="review_mediocre">Mediocre</string>
+    <string name="review_good">Good</string>
+    <string name="review_amazing">Amazing!</string>
+    <string name="review_button_text">Tap to add a review</string>
+
+    <!-- About -->
+    <string name="about_name">About</string>
+    <string name="third_party_software">Third Party Software</string>
+    <string name="apache_2_0_license">Apache 2.0 License</string>
+    <string name="isc_license">ISC License</string>
+    <string name="error_opening_license">Unable to open license file</string>
+    <string name="license">License</string>
+
+    <!-- Picture Filter Views -->
+    <string name="filter_clairity">Clairity</string>
+    <string name="filter_bw">B/W</string>
+    <string name="filter_dusk">Dusk</string>
+    <string name="filter_lomo">Lomo</string>
+    <string name="filter_perception">Perception</string>
+    <string name="filter_focus">Focus</string>
+    <string name="filter_saga">Saga</string>
+    <string name="filter_sunsight">Sunsight</string>
+    <string name="filter_serenity">Serenity</string>
+    <string name="filter_lighten">Lighten</string>
+    <string name="filter_original">Original</string>
+    <string name="filter_retro">Retro</string>
+    <string name="filter_luminance">Luminance</string>
+    <string name="filter_summer">Summer</string>
+    <string name="filter_twilight">Twilight</string>
+
+    <!-- P1 Action Bar -->
+    <string name="actionbar_item_desc">ActionBar Item</string>
+    <string name="todo">TODO</string>
+
+    <!-- contentDescription -->
+    <string name="contentDescription">None</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="close" translatable="false">Close Button</string>
+    <string name="new_conversation_search_hint">Search for friends</string>
+    <string name="follow_item_default_text">Unknown</string>
+
+    <!-- Relative timigns for messages -->
+    <string name="date_today">today</string>
+    <string name="date_yesterday">yesterday</string>
+    <string name="date_tomorrow">tomorrow</string>
+    <string name="date_year">year</string>
+    <string name="date_year_short">y</string>
+    <string name="date_month">month</string>
+    <string name="date_month_short">m</string>
+    <string name="date_week">week</string>
+    <string name="date_week_short">w</string>
+    <string name="date_day">day</string>
+    <string name="date_day_short">d</string>
+    <string name="time_hour">hour</string>
+    <string name="time_hour_short">h</string>
+    <string name="time_year">yr</string>
+    <string name="time_month">mo</string>
+    <string name="time_minute">minute</string>
+    <string name="time_minute_short">m</string>
+    <string name="time_second_short">s</string>
+    <string name="time_just_now">just now</string>
+    <string name="time_am">am</string>
+    <string name="time_pm">pm</string>
+    <string name="time_second">second</string>
+    <string name="timeline_string"> %1$d %2$s%3$s ago</string>
+    <string name="write_a_message">Write a message</string>
+    <string name="send">Send</string>
+
+    <!-- Notification strings -->
+
+    <string name="noti_mentioned_you_">"mentioned you "</string>
+    <string name="noti_in_this_comment">in this comment</string>
+    <string name="noti_on_a_post">in a post</string>
+    <string name="noti_in_a_picture_caption">in a picture caption</string>
+    <string name="noti_this_post">this post</string>
+    <string name="noti_this_picture">this picture</string>
+    <string name="noti_picture">picture</string>
+    <string name="noti_share">share</string>
+    <string name="noti_a_comment_on_your_">"a comment on your "</string>
+    <string name="noti_your_picture">your picture</string>
+    <string name="noti_your_post">your post</string>
+    <string name="noti_commented_on_">"commented on "</string>
+    <string name="noti_liked_">"liked "</string>
+    <string name="noti_started_following_you">started following you</string>
+
+    <!-- Custom Gallery -->
+    <string name="custom_footer_pictures_selected"> pictures selected</string>
+
+    <!-- Unsorted -->
+    <string name="loading_more">Loading more ...</string>
+    <string name="done">Done</string>
+    <string name="follow">Follow</string>
+    <string name="liker_fragment_title">Liked by %1$d people</string>
+    <string name="failed_to_load_likes_list">Failed to load.</string>
+    <string name="_comment">" comment"</string>
+    <string name="_comments">" comments"</string>
+    <string name="delete">Delete</string>
+    <string name="report_inappropriate">Report Inappropriate</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="tri_state_toggle_button">
+
+        <!-- Use one for every state you want to have -->
+        <attr name="tri_state_one" format="boolean" />
+        <attr name="tri_state_two" format="boolean" />
+        <attr name="tri_state_three" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="P1TextView">
+        <attr name="typeface"/>
+    </declare-styleable>
+    
+    <declare-styleable name="P1EditText">
+        <attr name="typeface"/>
+    </declare-styleable>
+    
+    <declare-styleable name="P1Button">
+        <attr name="typeface"/>
+    </declare-styleable>
+    
+    <declare-styleable name="P1ToggleButton">
+        <attr name="typeface"/>
+    </declare-styleable>
+    
+    <declare-styleable name="P1CheckBox">
+        <attr name="typeface"/>
+    </declare-styleable>
+    
+    <declare-styleable name="FeedImageView">
+        <attr name="minHeight" format="dimension" />
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+    
+    
+    <!-- Changes in this attribute must also be made inte ui.widget.P1TypefaceManager -->
+    <attr name="typeface" format="enum">
+        <enum name="helvetica_neue_light" value="0" />
+        <enum name="helvetica_neue_ultra_light" value="1" />
+        <enum name="helvetica_neue_medium" value="2" />
+        <enum name="helvetica_neue" value="3" />
+        <enum name="helvetica_neue_bold" value="4" />
+    </attr>
+</resources>

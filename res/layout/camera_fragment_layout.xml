@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.p1.mobile.p1android.ui.view.CameraPreview
+        android:id="@+id/cameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/cameraBottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/cameraSurfaceView"
+        android:background="@color/black" >
+
+        <ImageButton
+            android:id="@+id/cameraTakePictureButton"
+            style="@style/P1CameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_camera_shutter"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/cameraShowGalleryButton"
+            style="@style/P1CameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_gallery_white"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/cameraCancelButton"
+            style="@style/P1CloseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <com.p1.mobile.p1android.ui.widget.TriStateToggleButton
+        android:id="@+id/cameraFlashButton"
+        style="@style/P1CameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/tri_state_toggle_button" />
+
+    <ImageButton
+        android:id="@+id/cameraFrontBackSwitchButton"
+        style="@style/P1CameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/cameraFlashButton"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_camera_switch"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

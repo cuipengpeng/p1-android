@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/testContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/sharePostButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/post_button_text_padding"
+            android:paddingRight="@dimen/post_button_text_padding"
+            android:background="@drawable/btn_blue_button"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/post_share"
+            android:textColor="@color/white2semitransparent" />
+    
+
+</FrameLayout>

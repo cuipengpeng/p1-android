@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radioGroup1"
+    style="@null"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxHeight="40dp"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_browse_toggle_picture"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/browse_toggle_picture"
+            style="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:button="@drawable/browse_pictures_button"
+            android:checked="true"
+            android:maxHeight="40dp"
+            android:minWidth="75dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_browse_toggle_user"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/browse_toggle_user"
+            style="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:button="@drawable/browse_users_button"
+            android:maxHeight="40dp"
+            android:minWidth="75dp" />
+    </RelativeLayout>
+
+</RadioGroup>

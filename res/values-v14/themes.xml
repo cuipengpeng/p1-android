@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.P1ThemeLight" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.FullscreenOverlay" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/p1_translucent_ActionBar</item>
+    </style>
+
+    <style name="Theme.P1V3" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowBackground">@color/default_background</item>
+        <item name="android:colorBackground">@color/default_background</item>
+    </style>
+
+    <style name="Theme.P1V3.PicBackground" parent="@android:style/Theme.Holo.NoActionBar">
+        
+    </style>
+
+</resources>

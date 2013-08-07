@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/browseContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/browse_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/actionbar_height" >
+
+        <RelativeLayout
+            android:id="@+id/rl_browse_filter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_hide_height"
+            android:background="#eeeeee"
+            android:descendantFocusability="blocksDescendants" >
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/filter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                p1:typeface="helvetica_neue_light"
+                android:gravity="center_vertical"
+                android:textColor="@color/highlight_blue"
+                android:textSize="17sp" />
+
+            <com.p1.mobile.p1android.ui.widget.P1Button
+                android:id="@+id/filter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/browse_filters_button_xml"
+                android:gravity="center_vertical|right"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:paddingRight="10dp"
+                android:shadowColor="@android:color/white"
+                android:shadowDy="-1"
+                android:shadowRadius="1"
+                android:text="@string/browse_filter_text"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="11sp"
+                p1:typeface="helvetica_neue_bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/drop_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/shadow_gradient"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false" />
+    </LinearLayout>
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

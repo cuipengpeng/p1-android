@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actionbar_background"
+    android:orientation="vertical" >
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" >
+
+        <GridView
+            android:id="@+id/galleryPicturesGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darker_grey"
+            android:gravity="center"
+            android:numColumns="3"
+            android:padding="@dimen/gallery_grid_padding"
+            android:stretchMode="columnWidth" />
+
+        <com.p1.mobile.p1android.ui.widget.CustomGalleryFooter
+            android:id="@+id/customGalleryFooter1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_gravity="bottom"
+            android:background="@color/actionbar_background" />
+    </FrameLayout>
+
+</LinearLayout>

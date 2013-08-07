@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="4dp" />
+
+    <com.p1.mobile.p1android.ui.widget.P1EditText
+        android:id="@+id/shareEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/transparant"
+        android:ems="10"
+        android:gravity="left|top"
+        android:hint="@string/add_caption_hint"
+        android:inputType="textMultiLine"
+        android:minLines="@integer/share_dialog_min_lines"
+        android:textColor="@color/black"
+        android:textSize="@dimen/comment_caption_text_size" >
+
+        <requestFocus />
+    </com.p1.mobile.p1android.ui.widget.P1EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey" >
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/shareAddLocationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_location_indicator"
+            android:text="@string/add_location_text"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/share_dialog_background" />
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/sharePostButton"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            style="@style/P1ButtonBuleSmall"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/post_button_text_padding"
+            android:paddingRight="@dimen/post_button_text_padding"
+            android:text="@string/post_share"
+            android:textColor="@color/white2semitransparent" />
+    </RelativeLayout>
+
+</LinearLayout>

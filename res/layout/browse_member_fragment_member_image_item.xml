@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.p1.mobile.p1android.ui.view.SquareImageView
+     xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/member_fragment_member_image_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:contentDescription="@string/contentDescription"
+        android:padding="1dp"
+		android:background="@drawable/browse_member_picture_item_bg"/>

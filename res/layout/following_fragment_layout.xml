@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.p1.mobile.p1android.ui.view.KeyboardDetectorFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/following_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ProgressBar
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/following_error_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/failed_to_load_friends_list" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_following_actionbar_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_following"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/follow_list_divider"
+            android:dividerHeight="2px"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_following_no_search_results"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/actionbar_following"
+            android:background="@color/default_background"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:text="@string/following_no_search_results"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_following"
+        android:orientation="vertical" >
+
+        <com.p1.mobile.p1android.ui.widget.P1ActionBar
+            android:id="@+id/followlistActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/actionbar_height"
+            android:background="@color/white" >
+
+            <com.p1.mobile.p1android.ui.widget.P1EditText
+                android:id="@+id/et_following_search_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/following_search_bar"
+                android:gravity="center_vertical"
+                android:hint="@string/friends_following_search"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/browse_filter_tip_size" />
+
+            <ImageButton
+                android:id="@+id/ib_following_search_friends_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="@dimen/browse_filter_margin"
+                android:background="@color/transparant"
+                android:contentDescription="@string/contentDescription"
+                android:src="@drawable/following_search_clear"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/FrameLayout1"
+            android:background="@color/following_headerview_seperate"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false" />
+
+    </RelativeLayout>
+
+</com.p1.mobile.p1android.ui.view.KeyboardDetectorFrameLayout>

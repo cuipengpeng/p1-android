@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ProgressBar
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/error_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/failed_to_load_conversation_list" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/white"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false" />
+
+        <include
+            android:id="@android:id/empty"
+            layout="@layout/conversation_list_empty_layout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/browse_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/actionbar_height" >
+
+        <RelativeLayout
+            android:id="@+id/browse_conversation_create"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/auto_hide_height"
+            android:background="#FFFFFF"
+            android:descendantFocusability="blocksDescendants" >
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/filter_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="@string/conversation_start_new_conversation"
+                android:textColor="@color/highlight_blue"
+                android:textSize="17sp"
+                p1:typeface="helvetica_neue_light" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/compose" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/drop_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/shadow_gradient"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false" />
+    </LinearLayout>
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

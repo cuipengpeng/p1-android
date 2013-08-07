@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.p1.mobile.p1android.ui.view.FeedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feed_item_single"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.p1.mobile.p1android.ui.view.FeedImageView
+            android:id="@+id/feed_image_1"
+            android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            maxHeight="2048dp"
+            minHeight="144dp"
+            android:background="@drawable/feed_item_background"
+            android:scaleType="centerCrop" />
+
+        <include
+            android:layout_alignParentTop="true"
+            layout="@layout/feed_top" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            layout="@layout/feed_quick_action" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/feed_bottom" />
+
+</com.p1.mobile.p1android.ui.view.FeedLinearLayout>

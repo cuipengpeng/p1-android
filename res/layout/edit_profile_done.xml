@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.p1.mobile.p1android.ui.widget.P1TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_browse_filter_finish"
+    style="@style/P1SmallTextLight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_blue_button"
+    android:gravity="center"
+    android:minHeight="30dip"
+    android:minWidth="64dip"
+    android:scaleType="centerCrop"
+    android:text="@string/browse_filter_done" />

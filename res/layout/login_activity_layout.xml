@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/landing_page_background" />
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/login_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.p1.mobile.p1android.ui.widget.P1ActionBar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="72dp"
+        android:minWidth="240dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <com.p1.mobile.p1android.ui.widget.P1EditText
+                android:id="@+id/login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/usernamehint"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" >
+
+                <requestFocus />
+            </com.p1.mobile.p1android.ui.widget.P1EditText>
+
+            <com.p1.mobile.p1android.ui.widget.P1EditText
+                android:id="@+id/login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/passwordhint"
+                android:inputType="textPassword"
+                android:minHeight="48dp" />
+        </LinearLayout>
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/login_login"
+            style="@style/P1ButtonBuleSmallBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="42dp"
+            android:text="@string/login" />
+
+        <ViewSwitcher
+            android:id="@+id/login_forget_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp" >
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                style="@style/P1SmallTextLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/forget_password" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                style="@style/P1SmallTextLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/login" />
+        </ViewSwitcher>
+    </LinearLayout>
+
+</FrameLayout>

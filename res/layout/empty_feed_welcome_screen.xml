@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/empty_feed_background_inset"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/actionbar_height"
+    android:layout_marginBottom="@dimen/actionbar_height"
+    android:padding="@dimen/empty_feed_view_text_padding"
+    android:layout_height="match_parent" >
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textSize="@dimen/browse_filter_title"
+        android:layout_marginBottom="@dimen/empty_feed_view_item_margin"
+        android:text="@string/empty_feed_view_title" />
+    
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginBottom="@dimen/empty_feed_view_item_margin"
+        
+        android:text="@string/empty_feed_view_text" />
+    
+    <LinearLayout 
+        android:layout_marginBottom="@dimen/empty_feed_view_padding"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <View 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/start_sharing_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/ibtn_black_xml"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:paddingTop="0dp"
+            android:text="@string/empty_feed_start_sharing_text"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    
+    
+</LinearLayout>

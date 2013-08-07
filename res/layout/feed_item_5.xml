@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.p1.mobile.p1android.ui.view.FeedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_height="wrap_content"
+        layout="@layout/feed_top" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/images_feed_background"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"  >
+
+        <com.p1.mobile.p1android.ui.view.SquareImageView
+            android:id="@+id/feed_image_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <com.p1.mobile.p1android.ui.view.SquareImageView
+            android:id="@+id/feed_image_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/images_feed_background"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <com.p1.mobile.p1android.ui.view.SquareImageView
+            android:id="@+id/feed_image_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <com.p1.mobile.p1android.ui.view.SquareImageView
+            android:id="@+id/feed_image_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+
+        <com.p1.mobile.p1android.ui.view.SquareImageView
+            android:id="@+id/feed_image_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        layout="@layout/feed_quick_action" />
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/feed_bottom" />
+
+</com.p1.mobile.p1android.ui.view.FeedLinearLayout>

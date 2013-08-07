@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feed_top"
+    android:layout_width="match_parent"
+    android:layout_height="68dp"
+    android:background="@drawable/feed_item_background" >
+
+    <ImageView
+        android:id="@+id/feed_event_user_img"
+        android:layout_width="51dip"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/profile_shadow"
+        android:contentDescription="@string/profile_picture_decription"
+        android:scaleType="centerCrop" />
+
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:id="@+id/feed_user_name"
+        style="@style/P1LargerTextLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/feed_event_user_img"
+        android:layout_toRightOf="@id/feed_event_user_img"
+        android:shadowColor="@color/black"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        p1:typeface="helvetica_neue" />
+
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:id="@+id/feed_grid_images_count"
+        style="@style/P1SmallTextDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/feed_user_name"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/feed_event_user_img"
+        p1:typeface="helvetica_neue_bold" />
+
+    <ImageView
+        android:id="@+id/feed_event_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_action_overflow"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>

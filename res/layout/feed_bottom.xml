@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:id="@+id/feed_caption"
+        style="@style/P1SmallTextDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textSize="16sp"
+        p1:typeface="helvetica_neue" />
+
+    <LinearLayout
+        android:id="@+id/feed_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feed_item_bottom_background"
+        android:descendantFocusability="blocksDescendants" >
+
+        <com.p1.mobile.p1android.ui.widget.P1TextView
+            android:id="@+id/feed_timestamp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10000"
+            android:drawableLeft="@drawable/clock"
+            android:drawablePadding="5dp"
+            android:gravity="left|center"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            p1:typeface="helvetica_neue_bold" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/grey" />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/conversation_bubble"
+            tools:ignore="ContentDescription" />
+
+        <com.p1.mobile.p1android.ui.widget.P1TextView
+            android:id="@+id/feed_total_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:text="Lorem ipsum"
+            p1:typeface="helvetica_neue_bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/feed_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feed_item_bottom_background"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    </LinearLayout>
+
+</merge>

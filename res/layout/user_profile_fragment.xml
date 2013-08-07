@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_user_profile_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/user_profile_content_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:gravity="center"
+        android:headerDividersEnabled="false"
+        android:numColumns="3"
+        android:stretchMode="columnWidth" >
+    </ListView>
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/user_profile_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.p1.mobile.p1android.ui.widget.P1ActionBar>
+
+    <LinearLayout
+        android:id="@+id/ll_user_profile_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_user_profile_bottom_following"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_weight="1"
+            android:background="@drawable/nev_back_xml"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/friends_list_pic_desc"
+                android:src="@drawable/profile_toolbar_button_follow_icon_xml" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/text"
+                style="@style/P1MediumTextLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_profile_bottom_following"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="4px"
+            android:layout_height="@dimen/actionbar_height"
+            android:background="@drawable/nev_divider" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_profile_bottom_message"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_weight="1"
+            android:background="@drawable/nev_back_xml"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@id/image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/friends_list_pic_desc"
+                android:src="@drawable/profile_toolbar_button_talk_bubble_xml" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                style="@style/P1MediumTextLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_profile_bottom_message"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

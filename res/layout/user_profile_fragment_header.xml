@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/user_profile_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/friends_list_pic_desc"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@drawable/shadow_gradient_inverted" >
+
+            <ImageView
+                android:id="@+id/user_profile_thumb_image"
+                android:layout_width="53dip"
+                android:layout_height="53dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentTop="false"
+                android:layout_margin="12dp"
+                android:background="@drawable/profile_shadow"
+                android:contentDescription="@string/contentDescription" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/user_profile_name"
+                style="@style/P1MediumTextLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignTop="@id/user_profile_thumb_image"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/user_profile_thumb_image"
+                android:gravity="bottom"
+                android:text="@string/browse_member_item_username" />
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/user_profile_career"
+                style="@style/P1SmallTextDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/user_profile_name"
+                android:layout_below="@id/user_profile_name"
+                android:layout_marginBottom="16dp"
+                android:ellipsize="end"
+                android:gravity="top"
+                android:maxLength="40"
+                android:text="@string/browse_member_item_career_position"
+                android:textSize="@dimen/browse_member_other_text_size" />
+
+            <ImageView
+                android:id="@+id/user_profile_gender"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignBottom="@id/user_profile_name"
+                android:layout_alignTop="@id/user_profile_name"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/user_profile_name"
+                android:contentDescription="@string/friends_list_pic_desc"
+                android:src="@drawable/browse_member_female" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/filter_by_default_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <com.p1.mobile.p1android.ui.widget.P1TextView
+            android:id="@+id/user_profile_city"
+            style="@style/P1SmallTextDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="bottom"
+            android:text="@string/browse_member_item_where"
+            android:textSize="@dimen/browse_member_other_text_size" />
+
+        <ImageView
+            android:id="@+id/iv_user_profile_time"
+            android:layout_width="7dip"
+            android:layout_height="7dip"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dip"
+            android:layout_toRightOf="@id/user_profile_city"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/browse_member_cell_clock" />
+
+        <com.p1.mobile.p1android.ui.widget.P1TextView
+            android:id="@+id/user_profile_last_update"
+            style="@style/P1SmallTextDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dip"
+            android:layout_toRightOf="@id/iv_user_profile_time"
+            android:gravity="bottom"
+            android:text="@string/browse_member_item_time"
+            android:textSize="@dimen/browse_member_other_text_size" />
+
+        <com.p1.mobile.p1android.ui.widget.P1Button
+            android:id="@+id/btn_user_profile_edit"
+            style="@style/P1SmallTextLight"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/profile_edit_button_image"
+            android:gravity="center"
+            android:text="@string/user_profile_edit"
+            android:textSize="@dimen/browse_member_other_text_size"
+            android:visibility="gone"
+            p1:typeface="helvetica_neue" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <RelativeLayout
+        android:id="@+id/rl_user_profile_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:visibility="gone" >
+
+        <com.p1.mobile.p1android.ui.widget.P1TextView
+            android:id="@+id/tv_user_profile_desc"
+            style="@style/P1SmallTextBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="bottom"
+            android:textSize="@dimen/browse_member_username_text_size"
+            p1:typeface="helvetica_neue" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+</LinearLayout>

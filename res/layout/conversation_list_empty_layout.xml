@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/conversation_item_background"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/empty_header_row"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        layout="@layout/empty_list_header" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/chat_empty_speech_bubbles"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_header_row"
+        tools:ignore="UselessLeaf" >
+
+    </LinearLayout>
+
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:id="@+id/pTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/conversation_start_new_conversation"
+        android:textColor="@color/light_grey"
+        p1:typeface="helvetica_neue_light" />
+
+</RelativeLayout>

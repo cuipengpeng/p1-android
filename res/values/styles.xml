@@ -1,0 +1,176 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Text Styles -->
+
+	
+    <style name="P1LargerTextLight" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="P1LargerTextDark" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="P1MediumTextLight" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="P1MediumTextDark" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="P1MediumTextGray" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#626262</item>
+    </style>
+
+    <style name="P1SmallTextLight" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="P1SmallTextDark" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#7A7A7A</item>
+    </style>
+
+    <style name="P1SmallTextBlack" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="P1SmallTextGray" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#626262</item>
+    </style>
+
+    <style name="P1SmallTextLightGrey2White" parent="@android:style/TextAppearance.Small">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/font_grey2white</item>
+    </style>
+    
+    <!-- Button Styles -->
+
+    <style name="P1CameraButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/bg_camera_button</item>
+        <item name="android:padding">@dimen/default_camera_button_padding</item>
+    </style>
+
+    <style name="P1CloseButton" parent="@android:style/Widget.ImageButton">
+        <item name="android:background">@color/transparant</item>
+        <item name="android:src">@drawable/ibtn_cross_xml</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="P1Button" parent="@android:style/Widget.Button">
+        <item name="typeface">helvetica_neue</item>
+        <item name="android:shadowColor">#66000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="P1ButtonBuleBold" parent="@style/P1Button">
+        <item name="android:background">@drawable/ibtn_blue_xml</item>
+        <item name="typeface">helvetica_neue_bold</item>
+        <item name="android:shadowColor">#66000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="P1ButtonBuleSmallBold" parent="@style/P1Button">
+        <item name="android:background">@drawable/ibtn_blue_small_xml</item>
+        <item name="typeface">helvetica_neue_bold</item>
+        <item name="android:shadowColor">#66000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-2</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+    
+    <style name="P1ButtonBuleSmall" parent="@style/P1Button">
+        <item name="android:background">@drawable/ibtn_blue_small_xml</item>
+        <item name="typeface">helvetica_neue</item>
+        <item name="android:shadowColor">#66000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">-1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    
+    <style name="P1ButtonBuleActionBar" parent="@style/P1ButtonBuleSmall">
+        <item name="android:background">@drawable/ibtn_actionbar_blue_xml</item>
+    </style>
+    
+    <style name="P1ButtonBlackActionBar" parent="@style/P1ButtonBuleSmall">
+        <item name="android:background">@drawable/ibtn_actionbar_black_xml</item>
+    </style>
+    
+    <style name="P1ButtonBlackBold" parent="@style/P1ButtonBuleBold">
+        <item name="android:background">@drawable/ibtn_black_xml</item>
+    </style>
+
+    <style name="P1ButtonRedSignout" parent="@style/P1Button">
+        <item name="android:background">@drawable/ibtn_red_signout_xml</item>
+    </style>
+    <!-- P1 Action Bar Styles -->
+
+    <style name="ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/actionbar_background</item>
+    </style>
+
+    <style name="ActionBarItem">
+        <item name="android:layout_width">@dimen/actionbar_item_width</item>
+        <item name="android:layout_height">@dimen/actionbar_item_height</item>
+        <item name="android:background">@color/transparant</item>
+    </style>
+
+    <style name="ActionBarLeftItem" parent="ActionBarItem">
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+
+    <style name="ActionBarRightItem" parent="ActionBarItem">
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginLeft">1dp</item>
+    </style>
+
+    <style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/btn_browse_picture</item>
+    </style>
+
+    <!-- Picture View Styles -->
+    <style name="PictureViewToggle" parent="@android:style/Widget.Button.Toggle">
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+
+    <style name="LikeButton" parent="PictureViewToggle">
+        <item name="android:background">@drawable/btn_like</item>
+    </style>
+
+    <style name="CommentButton" parent="PictureViewToggle">
+        <item name="android:background">@drawable/btn_comment</item>
+    </style>
+
+    <style name="styleName">
+        <item name="android:textSize">@dimen/like_button_text_size</item>
+    </style>
+</resources>

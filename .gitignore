@@ -1,0 +1,28 @@
+lt application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+target/
+
+# Local configuration file (sdk path, etc)
+local.properties
+project.properties
+.classpath
+.settings/
+lint.xml
+src/com/p1/mobile/p1android/Config.java
+
+# IntelliJ
+.idea
+
+# Mac OSX
+.DS_Store

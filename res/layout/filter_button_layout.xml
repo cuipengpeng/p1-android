@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_filter"
+    android:orientation="vertical"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/filterButtonImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop" />
+
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:id="@+id/filterButtonTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filterButtonImageView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/filter_text_size" />
+
+</RelativeLayout>

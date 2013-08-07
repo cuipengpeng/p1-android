@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/galleryViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+
+    <include
+        android:id="@+id/buttonbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="25dp"
+        layout="@layout/picture_view_pager_bottom_bar" />
+
+    <ImageButton
+        android:id="@+id/pictureViewPagerClose"
+        android:layout_width="@dimen/actionbar_item_width"
+        android:layout_height="@dimen/actionbar_item_width"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/transparant"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ibtn_cross_gallery_xml" />
+
+</FrameLayout>

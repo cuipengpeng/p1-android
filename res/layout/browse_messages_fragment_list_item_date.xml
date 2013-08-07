@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp" >
+
+        <com.p1.mobile.p1android.ui.widget.P1TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/date_divider"
+            style="@style/P1SmallTextDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/date_separator"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/date_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

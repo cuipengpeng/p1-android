@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/new_conversation_ab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/search_people_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_conversation_ab"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <com.p1.mobile.p1android.ui.widget.P1EditText
+            android:id="@+id/search_people_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_conversation_search_hint"
+            android:textColor="@color/black" >
+
+            <requestFocus />
+        </com.p1.mobile.p1android.ui.widget.P1EditText>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/found_people_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_people_bar"
+        android:divider="@drawable/follow_list_divider"
+        android:dividerHeight="2dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+    <RelativeLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_people_bar"
+        android:layout_marginBottom="@dimen/actionbar_height"
+        android:paddingBottom="@dimen/actionbar_height" >
+
+        <ProgressBar
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:id="@+id/new_conv_status_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_people_bar"
+        android:layout_centerInParent="true"
+        android:background="@color/default_background"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="@string/no_followers_or_following"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/drop_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_below="@id/search_people_bar"
+        android:background="@drawable/shadow_gradient" />
+
+</RelativeLayout>

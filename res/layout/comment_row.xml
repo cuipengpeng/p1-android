@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/br_profile_pic" >
+
+            <ImageView
+                android:id="@+id/comment_user_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/profile_picture_decription"
+                android:padding="1dp"
+                android:src="@drawable/side_panel_profile" />
+        </RelativeLayout>
+
+        <com.p1.mobile.p1android.ui.widget.P1TextView
+            android:id="@+id/comment_main_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingBottom="10dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/conversation_msg_grey"
+            android:textSize="14sp"
+            p1:typeface="helvetica_neue" />
+
+        <com.p1.mobile.p1android.ui.widget.P1TextView
+            android:id="@+id/comment_time_stamp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/conversation_msg_grey"
+            android:textSize="@dimen/Notification_time_text_size"
+            p1:typeface="helvetica_neue_light" />
+    </LinearLayout>
+
+</LinearLayout>

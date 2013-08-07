@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="landing_slide_titles">
+        <item>用照片诠释生活，发现精彩</item>
+        <item>让照片更有个性</item>
+        <item>发现精彩</item>
+        <item>亲密联络</item>
+    </string-array>
+    <string-array name="landing_slide_subtitles">
+        <item> </item>
+        <item>独家滤镜让你的照片更充分表达个性，优雅有型；分享你的生活和热情。</item>
+        <item>浏览会员分享的照片，发现有意思的生活；浏览社区成员，认识兴趣相近的新朋友。</item>
+        <item>关注你的朋友们和兴趣相近的人，随时随地保持联系。</item>
+    </string-array>
+
+</resources>

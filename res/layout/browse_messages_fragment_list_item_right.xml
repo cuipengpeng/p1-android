@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:p1="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_browse_fragment_list_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.7" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="6dip"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:minWidth="50dp"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/chat_error_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/chat_error"
+                    android:visibility="gone" />
+
+                <com.p1.mobile.p1android.ui.widget.P1TextView
+                    android:id="@+id/chat_list_item_message_time"
+                    style="@style/P1SmallTextDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/time_text_size"
+                    p1:typeface="helvetica_neue" />
+            </LinearLayout>
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                android:id="@+id/chat_list_item_message"
+                style="@style/P1MediumTextDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:autoLink="web"
+                android:background="@drawable/chat_bubble_gold"
+                android:gravity="center_vertical|right"
+                android:textColor="@color/black"
+                android:textSize="@dimen/message_text_size"
+                p1:typeface="helvetica_neue" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_browse_fragment_list_profile"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:layout_margin="6dip"
+            android:contentDescription="@string/contentDescription" />
+    </LinearLayout>
+
+</LinearLayout>

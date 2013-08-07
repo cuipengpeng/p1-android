@@ -1,0 +1,5 @@
+package com.p1.mobile.p1android.filter;
+
+public enum FilterType {
+    SERENITY, BW, CLAIRITY, DUSK, FOCUS, LOMO, PERCEPTION, SAGA, SUNSIGHT, ORIGINAL, LIGHTEN, LUMINANCE, RETRO, SUMMER, TWILIGHT
+}

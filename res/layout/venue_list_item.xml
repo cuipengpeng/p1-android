@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/grey" >
+
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:id="@+id/venueTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/P1LargerTextDark"
+        android:paddingTop="4dp"
+        android:paddingLeft="8dp" />
+
+    <com.p1.mobile.p1android.ui.widget.P1TextView
+        android:id="@+id/venueDescText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/P1SmallTextGray"
+        android:paddingLeft="8dp"
+        android:paddingBottom="4dp" />
+
+</LinearLayout>

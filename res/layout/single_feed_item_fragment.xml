@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/item_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="48dp" >
+
+        <LinearLayout
+            android:id="@+id/feed_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="48dp" >
+
+            <requestFocus />
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/feed_item_ab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_alignParentBottom="true"
+        layout="@layout/send_bar" />
+
+<!--     <com.p1.mobile.p1android.ui.widget.P1EditText -->
+<!--         android:id="@+id/feed_comment_input" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="48dp" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:background="@color/white" -->
+<!--         android:hint="@string/add_a_comment_" -->
+<!--         android:imeOptions="actionSend" -->
+<!--         android:padding="5dp" -->
+<!--         android:singleLine="true" -->
+<!--         android:textColor="@color/black" /> -->
+
+<!--     <View -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="3dp" -->
+<!--         android:layout_above="@id/feed_comment_input" -->
+<!--         android:background="@drawable/shadow_gradient_invert" /> -->
+
+</RelativeLayout>

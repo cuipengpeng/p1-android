@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/landing_page_background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="96dp"
+            android:orientation="vertical" >
+
+            <com.p1.mobile.p1android.ui.widget.P1TextView
+                style="@style/P1SmallTextLight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_text" />
+
+            <com.p1.mobile.p1android.ui.widget.P1EditText
+                android:id="@+id/apply_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:ems="10"
+                android:hint="@string/apply_fistname"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <com.p1.mobile.p1android.ui.widget.P1EditText
+                android:id="@+id/apply_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/apply_lastname"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <com.p1.mobile.p1android.ui.widget.P1EditText
+                android:id="@+id/apply_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/apply_email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.p1.mobile.p1android.ui.widget.P1ActionBar
+        android:id="@+id/login_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.p1.mobile.p1android.ui.widget.P1ActionBar>
+
+</FrameLayout>
